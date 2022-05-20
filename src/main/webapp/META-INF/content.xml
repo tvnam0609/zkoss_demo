@@ -1,0 +1,16 @@
+<Context path="/apps" docBase="apps" debug="5" reloadable="true" crossContext="true">
+         
+        <Resource name="jdbc/apps" auth="Container" type="javax.sql.DataSource"
+                  username="sa"
+                  password="12345678"
+                  driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+                  url="jdbc:sqlserver://localhost:1433;DatabaseName=dbapps"
+                  maxActive="100"
+                  maxIdle="50"
+                  maxWait = "10000"
+                  removeAbandoned = "true"
+                  logAbandoned = "true"
+                  removeAbandonedTimeout = "60"
+                  validationQuery="select 1"/>
+                 
+</Context>
